@@ -15,6 +15,7 @@ set('repository', 'git@github.com:levanlinh1995/github-action.git'); // Git Repo
 set('ssh_multiplexing', true);  // Speed up deployment
 //set('default_timeout', 1000);
 set('git_tty', true);
+set('git_ssh_command', 'ssh');
 
 set('rsync_src', function () {
     return __DIR__; // If your project isn't in the root, you'll need to change this.
