@@ -59,7 +59,7 @@ desc('Start of Deploy the application');
 task('deploy', [
     'deploy:prepare',
     'rsync',                // Deploy code & built assets
-    // 'deploy:secrets',       // Deploy secrets
+    'deploy:secrets',       // Deploy secrets
     'deploy:vendors',
     'deploy:shared',        // 
     'artisan:storage:link', //
